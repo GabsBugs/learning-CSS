@@ -1,8 +1,8 @@
 p {
     color:rgb(224, 154, 154);
-    font-size: 32px;
-    /* text-decoration: underline; */
+    font-size: 49px;
 }
+    /* text-decoration: underline; */
 
 p {
     /* background-color:rgb(135, 69, 69); */
@@ -11,5 +11,44 @@ p {
 
 body {
     background-color:rgb(218, 209, 228);
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Nabla', 'cursive';
+}
+
+/* tipos de seletor básico
+1) por elemento
+2) por id (#) => estilização única
+3) por class (.) => estilização p/ vários */
+
+h1, h2, h3 {
+    color: white;
+}
+
+/* Uso o id quando quero estilizar um elemento
+específico
+*/
+#meu-h1 { 
+    font-weight: 100;
+    font-family: monospace;
+}
+
+/*
+Posso aplicar a class em diversos elementos
+diferentes.
+*/
+.cabecalho {
+    color: crimson;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.quadrado {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 16px;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 16px;
 }
