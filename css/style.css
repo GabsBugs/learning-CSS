@@ -1,0 +1,15 @@
+p {
+    color:rgb(224, 154, 154);
+    font-size: 32px;
+    /* text-decoration: underline; */
+}
+
+p {
+    /* background-color:rgb(135, 69, 69); */
+    font-family: sans-serif;
+}
+
+body {
+    background-color:rgb(218, 209, 228);
+    font-family:'arial';
+}
