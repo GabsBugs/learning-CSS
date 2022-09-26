@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.box-1 {
+    background-color: rgb(178, 95, 109);
+    order:1;
+}
+
+.box-2 {
+    background-color: rgb(108, 108, 142);
+    height: 200px;
+}
+
+.box-3 {
+    background-color: rgb(125, 152, 85);
+    align-self: flex-start;
+}
+
+.box-4 {
+    background-color: rgb(110, 2, 2);
+}
+
+.container-flex {
+    background-color: bisque;
+
+    /* ativa o flexbox */
+    display: flex; 
+
+    /* O Flexbox tem como meta ser um modo mais eficiente para criar leiautes, alinhar e distribuir espaços entre itens em um container, mesmo quando as dimensões destes itens são desconhecidas e/ou dinâmicas (daí o termo "flex"). */
+
+    /* column  = coloca os elementos um embaixo do outro: vertical*/
+    /* flex-direction: column; */
+
+    /* row = colovca os elementos um ao lado do outro: horizontal */
+    flex-direction: row;
+
+    /* fixa o tamanho das boxes */
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    align-content: space-around;
+    height: 550px;
+    gap: 1px;
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    height: 200px;
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.box-5 {
+    background-color: rgb(136, 158, 92);
+    /* flex fraciona a largura */
+    flex: 1;
+}
+
+.box-6 {
+    background-color: rgb(22, 25, 178);
+    flex: 2;
+}
+
+.box-7 {
+    background-color: rgb(255, 0, 93);
+    width: 400px;
+}
+
+.container-flex-2 {
+    display: flex;
+    background-color: orangered;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.tela-inteira {
+    height: 100vh;
+}
