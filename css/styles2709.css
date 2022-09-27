@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+
+/* representa o pai/mãe */
+:root { 
+    --azul: #0f637a;
+    --amarelo: #ffd900;
+}
+
+.navbar {
+    background-color: var(--azul);
+    display: flex;
+    min-height: 85px;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 0, 43);
+
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 255, 72);
+}
+
+.navbar-burger {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+
+    /* oculta o elemento */
+    display: none; 
+}
+
+.navbar-link {
+    /* tira o sublinhado */
+    text-decoration: none;
+    color: rgb(139, 24, 118);
+    padding: 0 5px;
+}
+
+.navbar-link:hover {
+    opacity: 0.75;
+}
+
+/* quando a tela for menor que 770px... */
+@media (max-width: 770px ) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-burger {
+        display: inline;
+    }
+
+    .navbar-brand {
+        justify-content: space-between;
+    }
+
+    .navbar, .navbar-menu {
+        flex-direction: column;
+    }
+
+    .navbar-link {
+        padding: 8px 0;
+    }
+}
+
+.ativa {
+    display: flex;
+}
